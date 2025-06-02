@@ -16,14 +16,14 @@
         <nav>
             <ul>
                 <li>
-                    <h1>Clientes</h1>
+                    <h1>Motos</h1>
                 </li>
             </ul>
             <ul>
                 <li><a href="index.html">Inicio</a></li>
-                <li><a href="#">Ordenes</a></li>
-                <li><a href="#" class="seleccionado">Clientes</a></li>
-                <li><a href="motos.html">Motos</a></li>
+                <li><a href="menu.html">Ordenes</a></li>
+                <li><a href="clientes.html">Clientes</a></li>
+                <li><a href="#" class="seleccionado">Motos</a></li>
                 <li><a href="#">Marcas</a></li>
                 <li>
                     <a href="index.html" class="logout-btn" title="Cerrar sesión">
@@ -36,7 +36,7 @@
 
         <div class="grid">
             <div>
-                <a href="cliente.html">Añadir cliente</a>
+                <a href="moto.html">Añadir moto</a>
             </div>
             <div>
                 <form role="search">
@@ -53,10 +53,11 @@
                 <thead>
                     <tr>
                         <th>ID</th>
-                        <th>Apellidos</th>
-                        <th>Nombres</th>
-                        <th>Teléfono</th>
-                        <th>Correo</th>
+                        <th>Marca</th>
+                        <th>Color</th>
+                        <th>Tipo</th>
+                        <th>No. de placa</th>
+                        <th>Observaciones</th>
                         <th>Usuario Crea</th>
                         <th>Fecha Registro</th>
                         <th>Editar</th>
@@ -64,80 +65,88 @@
                     </tr>
                 </thead>
                 <tbody>
+
                     <tr>
                         <td>1</td>
-                        <td>García</td>
-                        <td>Juan</td>
-                        <td>555-1234</td>
-                        <td>juan.garcia@email.com</td>
+                        <td>Suzuki</td>
+                        <td>Azul</td>
+                        <td>GNH125</td>
+                        <td>M004515</td>
+                        <td>Tiene cajuela</td>
                         <td>admin</td>
                         <td>2024-05-01</td>
                         <td><button title="Editar"><i class="fas fa-edit"></i></button></td>
                         <td><button title="Eliminar"><i class="fas fa-trash-alt"></i></button></td>
                     </tr>
+
                     <tr>
                         <td>2</td>
-                        <td>López</td>
-                        <td>María</td>
-                        <td>555-5678</td>
-                        <td>maria.lopez@email.com</td>
+                        <td>Honda</td>
+                        <td>Rojo</td>
+                        <td>CBR250</td>
+                        <td>H123456</td>
+                        <td>Sin cajuela</td>
                         <td>jlopez</td>
-                        <td>2024-05-02</td>
-                        <td><button title="Editar"><i class="fas fa-edit"></i></button></td>
-                        <td><button title="Eliminar"><i class="fas fa-trash-alt"></i></button></td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>Pérez</td>
-                        <td>Carlos</td>
-                        <td>555-8765</td>
-                        <td>carlos.perez@email.com</td>
-                        <td>admin</td>
                         <td>2024-05-03</td>
                         <td><button title="Editar"><i class="fas fa-edit"></i></button></td>
                         <td><button title="Eliminar"><i class="fas fa-trash-alt"></i></button></td>
                     </tr>
                     <tr>
-                        <td>4</td>
-                        <td>Martínez</td>
-                        <td>Ana</td>
-                        <td>555-4321</td>
-                        <td>ana.martinez@email.com</td>
-                        <td>mmartinez</td>
-                        <td>2024-05-04</td>
-                        <td><button title="Editar"><i class="fas fa-edit"></i></button></td>
-                        <td><button title="Eliminar"><i class="fas fa-trash-alt"></i></button></td>
-                    </tr>
-                    <tr>
-                        <td>5</td>
-                        <td>Ramírez</td>
-                        <td>Luis</td>
-                        <td>555-2468</td>
-                        <td>luis.ramirez@email.com</td>
-                        <td>admin</td>
+                        <td>3</td>
+                        <td>Yamaha</td>
+                        <td>Negro</td>
+                        <td>FZ16</td>
+                        <td>Y789012</td>
+                        <td>Con parabrisas</td>
+                        <td>maria</td>
                         <td>2024-05-05</td>
                         <td><button title="Editar"><i class="fas fa-edit"></i></button></td>
                         <td><button title="Eliminar"><i class="fas fa-trash-alt"></i></button></td>
                     </tr>
                     <tr>
-                        <td>6</td>
-                        <td>Hernández</td>
-                        <td>Lucía</td>
-                        <td>555-1357</td>
-                        <td>lucia.hernandez@email.com</td>
-                        <td>lhernandez</td>
-                        <td>2024-05-06</td>
+                        <td>4</td>
+                        <td>Kawasaki</td>
+                        <td>Verde</td>
+                        <td>Ninja 400</td>
+                        <td>K654321</td>
+                        <td>Sin observaciones</td>
+                        <td>admin</td>
+                        <td>2024-05-07</td>
                         <td><button title="Editar"><i class="fas fa-edit"></i></button></td>
                         <td><button title="Eliminar"><i class="fas fa-trash-alt"></i></button></td>
                     </tr>
-                    
+                    <tr>
+                        <td>5</td>
+                        <td>Italika</td>
+                        <td>Gris</td>
+                        <td>WS150</td>
+                        <td>I112233</td>
+                        <td>Con porta casco</td>
+                        <td>carlos</td>
+                        <td>2024-05-10</td>
+                        <td><button title="Editar"><i class="fas fa-edit"></i></button></td>
+                        <td><button title="Eliminar"><i class="fas fa-trash-alt"></i></button></td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>BMW</td>
+                        <td>Blanco</td>
+                        <td>G310R</td>
+                        <td>B998877</td>
+                        <td>Sin cajuela</td>
+                        <td>sofia</td>
+                        <td>2024-05-12</td>
+                        <td><button title="Editar"><i class="fas fa-edit"></i></button></td>
+                        <td><button title="Eliminar"><i class="fas fa-trash-alt"></i></button></td>
+                    </tr>
+
                 </tbody>
             </table>
-            
+
         </div><!--overflow-auto-->
     </div><!--container-fluid-->
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
 </body>
 

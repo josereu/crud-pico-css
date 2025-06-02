@@ -16,7 +16,7 @@
         <nav>
             <ul>
                 <li>
-                    <h1>Cliente Nuevo</h1>
+                    <h1>Moto nueva</h1>
                 </li>
             </ul>
             <ul>
@@ -34,16 +34,24 @@
         </nav>
 
         <form action="">
-            <input type="text" placeholder="Apellidos" autofocus required>
-            <input type="password" placeholder="Nombres" required>
-            <input type="text" placeholder="Teléfono" required>
-            <input type="text" placeholder="Dirección" required>
-            <input type="text" placeholder="Correo electrónico">
-            <button type="submit" formaction="clientes.html">Continuar</button>
+
+            <select name="select" aria-label="Select" required>
+                <option selected disabled value="">Marca</option>
+                <option>Suzuki</option>
+                <option>Honda</option>
+                <option>Boxer</option>
+                <option>Haojuei</option>false
+            </select>
+
+            <input type="text" placeholder="Color de la moto" required>
+            <input type="text" placeholder="Tipo de moto" required>
+            <input type="text" placeholder="No. de placa" required>
+            <input type="text" placeholder="Observaciones">
+            <button type="submit" formaction="motos.html">Continuar</button>
         </form>
     </div>
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </body>
 
 </html>
