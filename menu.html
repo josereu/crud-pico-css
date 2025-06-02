@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="pico-main/pico-main/css/pico.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <nav>
+            <ul>
+                <li><strong>Menú Principal</strong></li>
+            </ul>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#" class="seleccionado">Ordenes</a></li>
+                <li><a href="#">Clientes</a></li>
+                <li><a href="#">Motos</a></li>
+                <li><a href="#">Marcas</a></li>
+                <li>
+                    <a href="index.html" class="logout-btn" title="Cerrar sesión">
+                        <i class="fa-solid fa-power-off"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+    </div><!--container-fluid-->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <script>
+        const hamburgerBtn = document.getElementById('hamburgerBtn');
+        const navMenu = document.getElementById('navMenu');
+
+        hamburgerBtn.addEventListener('click', () => {
+            navMenu.classList.toggle('show');
+        });
+    </script>
+</body>
+
+</html>
