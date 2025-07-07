@@ -4,23 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu</title>
+    <title>Ordenes</title>
     <link rel="stylesheet" href="pico-main/pico-main/css/pico.min.css">
     <link rel="stylesheet" href="css/custom.css">
 </head>
 
 <body>
+
     <div class="container-fluid">
+
         <nav>
             <ul>
-                <li><strong>Menú Principal</strong></li>
+                <li>
+                    <h1>Ordenes de taller</h1>
+                </li>
             </ul>
             <ul>
                 <li><a href="index.html">Inicio</a></li>
-                <li><a href="#" class="seleccionado">Ordenes</a></li>
+                <li><a href="menu.html" class="seleccionado">Ordenes</a></li>
                 <li><a href="clientes.html">Clientes</a></li>
-                <li><a href="#">Motos</a></li>
-                <li><a href="#">Marcas</a></li>
+                <li><a href="motos.html">Motos</a></li>
+                <li><a href="marcas.html">Marcas</a></li>
                 <li>
                     <a href="index.html" class="logout-btn" title="Cerrar sesión">
                         <i class="fa-solid fa-power-off"></i>
@@ -29,17 +33,136 @@
             </ul>
         </nav>
 
-    </div><!--container-fluid-->
+        <div class="grid">
+            <div>
+                <a href="orden.html">Añadir orden</a>
+            </div>
+            <div>
+                <form role="search">
+                    <input name="search" type="search" placeholder="Buscar" />
+                    <input type="submit" value="Buscar" />
+                </form>
+            </div>
+        </div>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-    <script>
-        const hamburgerBtn = document.getElementById('hamburgerBtn');
-        const navMenu = document.getElementById('navMenu');
+        <!-- Tabla de clientes con datos aleatorios -->
+        <div class="overflow-auto">
 
-        hamburgerBtn.addEventListener('click', () => {
-            navMenu.classList.toggle('show');
-        });
-    </script>
+            <!-- ...existing code... -->
+            <div class="overflow-auto">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>No. Orden</th>
+                            <th>Tipo de servicio</th>
+                            <th>Marca</th>
+                            <th>Color</th>
+                            <th>Tipo</th>
+                            <th>No. de placa</th>
+                            <th>Nombre</th>
+                            <th>Teléfono</th>
+                            <th>Dirección</th>
+                            <th>Usuario Crea</th>
+                            <th>Fecha Registro</th>
+                            <th>Editar</th>
+                            <th>Eliminar</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>ORD-8234</td>
+                            <td>Mayor</td>
+                            <td>Suzuki</td>
+                            <td>Azul</td>
+                            <td>GNH125</td>
+                            <td>M004515</td>
+                            <td>Luis Morales</td>
+                            <td>45254545</td>
+                            <td>Guatemala</td>
+                            <td>admin</td>
+                            <td>2024-05-01</td>
+                            <td><button title="Editar"><i class="fas fa-edit"></i></button></td>
+                            <td><button title="Eliminar"><i class="fas fa-trash-alt"></i></button></td>
+                        </tr>
+                        <tr>
+                            <td>ORD-1927</td>
+                            <td>Menor</td>
+                            <td>Honda</td>
+                            <td>Rojo</td>
+                            <td>CBR250</td>
+                            <td>H123456</td>
+                            <td>María Pérez</td>
+                            <td>55667788</td>
+                            <td>Mixco</td>
+                            <td>jlopez</td>
+                            <td>2024-05-03</td>
+                            <td><button title="Editar"><i class="fas fa-edit"></i></button></td>
+                            <td><button title="Eliminar"><i class="fas fa-trash-alt"></i></button></td>
+                        </tr>
+                        <tr>
+                            <td>ORD-4756</td>
+                            <td>Mayor</td>
+                            <td>Yamaha</td>
+                            <td>Negro</td>
+                            <td>FZ16</td>
+                            <td>Y789012</td>
+                            <td>Carlos Gómez</td>
+                            <td>33445566</td>
+                            <td>Villa Nueva</td>
+                            <td>maria</td>
+                            <td>2024-05-05</td>
+                            <td><button title="Editar"><i class="fas fa-edit"></i></button></td>
+                            <td><button title="Eliminar"><i class="fas fa-trash-alt"></i></button></td>
+                        </tr>
+                        <tr>
+                            <td>ORD-3081</td>
+                            <td>Menor</td>
+                            <td>Kawasaki</td>
+                            <td>Verde</td>
+                            <td>Ninja 400</td>
+                            <td>K654321</td>
+                            <td>Sofía López</td>
+                            <td>77889900</td>
+                            <td>Zona 10</td>
+                            <td>admin</td>
+                            <td>2024-05-07</td>
+                            <td><button title="Editar"><i class="fas fa-edit"></i></button></td>
+                            <td><button title="Eliminar"><i class="fas fa-trash-alt"></i></button></td>
+                        </tr>
+                        <tr>
+                            <td>ORD-6542</td>
+                            <td>Mayor</td>
+                            <td>Italika</td>
+                            <td>Gris</td>
+                            <td>WS150</td>
+                            <td>I112233</td>
+                            <td>Pedro Ramírez</td>
+                            <td>22334455</td>
+                            <td>Antigua</td>
+                            <td>carlos</td>
+                            <td>2024-05-10</td>
+                            <td><button title="Editar"><i class="fas fa-edit"></i></button></td>
+                            <td><button title="Eliminar"><i class="fas fa-trash-alt"></i></button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div><!--overflow-auto-->
+            <!-- ...existing code...
+            
+        </div><!--overflow-auto-->
+
+        </div><!--container-fluid-->
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+        <script>
+            const hamburgerBtn = document.getElementById('hamburgerBtn');
+            const navMenu = document.getElementById('navMenu');
+
+            hamburgerBtn.addEventListener('click', () => {
+                navMenu.classList.toggle('show');
+            });
+        </script>
+
 </body>
 
 </html>

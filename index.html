@@ -11,19 +11,21 @@
 
 <body>
     <main class="container-fluid">
-        <form>
-            <fieldset>
-                <h2>Iniciar sesión</h2>
-                <label>
-                    Usuario
-                    <input name="usuario" placeholder="Usuario" autofocus required/>
-                </label>
-                <label>
-                    Contraseña
-                    <input type="password" name="contrasena" placeholder="Contraseña" required/>
-                </label>
-            </fieldset>
-            <button type="submit" formaction="menu.html">Continuar</button>
+        <form action="/menu.html" method="get">
+            <div id="card-login">
+                <fieldset>
+                    <h2>Iniciar sesión</h2>
+                    <label>
+                        Usuario
+                        <input name="usuario" placeholder="Usuario" autofocus required/>
+                    </label>
+                    <label>
+                        Contraseña
+                        <input type="password" name="contrasena" placeholder="Contraseña" required/>
+                    </label>
+                </fieldset>
+                <button type="submit">Continuar</button>
+            </div>
         </form>
     </main>
 </body>

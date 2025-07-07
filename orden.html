@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cliente</title>
+    <link rel="stylesheet" href="pico-main/pico-main/css/pico.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+
+<body>
+
+    <div class="container-fluid">
+
+        <nav>
+            <ul>
+                <li>
+                    <h2>Orden Nueva</h2>
+                </li>
+            </ul>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="orden.html">Ordenes</a></li>
+                <li><a href="clientes.html">Clientes</a></li>
+                <li><a href="motos.html">Motos</a></li>
+                <li><a href="marcas.html">Marcas</a></li>
+                <li>
+                    <a href="index.html" class="logout-btn" title="Cerrar sesión">
+                        <i class="fa-solid fa-power-off"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="grid">
+            <div>
+                <form role="search">
+                    <input name="search" type="search" placeholder="Ingrese el nombre o número de teléfono" />
+                    <input type="submit" value="Buscar cliente" />
+                </form>
+            </div>
+        </div>
+
+        <form>
+
+            <div class="grid">
+                <div>
+                    <hgroup>
+                        <h3>Datos generales del cliente</h3>
+                        <label><strong>Nombre:</strong> José Miguel Tojil Gento</label>
+                        <label><strong>Teléfono:</strong> 55150137</label>
+                        <label><strong>Dirección:</strong> Ciudad</label>
+                    </hgroup>
+                </div>
+
+                <div>
+                    <hgroup>
+                        <h3>Motos del cliente</h3>
+
+                        <fieldset>
+                            <select name="moto" aria-label="Seleccione la moto del cliente" >
+                                <option selected disabled value="">
+                                    Seleccione la moto del cliente
+                                </option>
+                                <option>Suzuki</option>
+                                <option>Honda</option>
+                            </select>
+                        </fieldset>
+                    </hgroup>
+                </div>
+
+            </div><!--fin datos generales del cliente-->
+
+
+            <div class="grid">
+
+                <div>
+                    <hgroup>
+                        <h3>Datos de la moto</h3>
+                        <label><strong>Marca de la moto:</strong> Suzuki</label>
+                        <label><strong>Color de la moto:</strong> Azul</label>
+                        <label><strong>Tipo de moto:</strong> GNH125</label>
+                        <label><strong>No. de placa:</strong> M054DFG</label>
+                        <label><strong>Ultimo servicio:</strong> Mayor</label>
+                        <label><strong>Kilometraje anterior:</strong>20,000</label>
+                        <label><strong>Kilometraje actual:</strong></label>
+                        <input type="text" name="text" placeholder="Ingrese el kilometraje actual" aria-label="Text">
+                    </hgroup>
+                </div>
+
+            </div><!--datos generales de la moto-->
+
+            <div class="grid">
+                <div>
+                    <hgroup>
+                        <h3>Servicio de la moto</h3>
+
+                        <fieldset>
+                            <select name="tipo servicio">
+                                <option selected disabled value="">
+                                    Seleccione el tipo de servicio
+                                </option>
+                                <option>Mayor</option>
+                                <option>Menor</option>
+                            </select>
+                        </fieldset>
+                    </hgroup>
+                    
+                    <label><strong>Observaciones:</strong></label>
+                    <textarea name="observaciones">
+                    </textarea>
+
+                </div>
+            </div><!--Observaciones-->
+
+            <div class="grid">
+                <div>
+                    <button type="submit" formaction="menu.html">Guardar</button>        
+                </div>
+            </div>
+
+        </form>
+
+    </div>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</body>
+
+</html>

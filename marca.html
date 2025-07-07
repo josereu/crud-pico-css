@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cliente</title>
+    <title>Marcas</title>
     <link rel="stylesheet" href="pico-main/pico-main/css/pico.min.css">
     <link rel="stylesheet" href="css/custom.css">
 </head>
@@ -16,12 +16,12 @@
         <nav>
             <ul>
                 <li>
-                    <h1>Moto nueva</h1>
+                    <h1>Marca nueva</h1>
                 </li>
             </ul>
             <ul>
                 <li><a href="index.html">Inicio</a></li>
-                <li><a href="#">Ordenes</a></li>
+                <li><a href="menu.html">Ordenes</a></li>
                 <li><a href="clientes.html">Clientes</a></li>
                 <li><a href="motos.html">Motos</a></li>
                 <li><a href="marcas.html">Marcas</a></li>
@@ -34,20 +34,8 @@
         </nav>
 
         <form action="">
-
-            <select name="select" aria-label="Select" required>
-                <option selected disabled value="">Marca</option>
-                <option>Suzuki</option>
-                <option>Honda</option>
-                <option>Boxer</option>
-                <option>Haojuei</option>false
-            </select>
-
-            <input type="text" placeholder="Color de la moto" required>
-            <input type="text" placeholder="Tipo de moto" required>
-            <input type="text" placeholder="No. de placa" required>
-            <input type="text" placeholder="Observaciones">
-            <button type="submit" formaction="motos.html">Continuar</button>
+            <input type="text" placeholder="Marca" required autofocus>
+            <button type="submit" formaction="marcas.html">Continuar</button>
         </form>
     </main>
 
